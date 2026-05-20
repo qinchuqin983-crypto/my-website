@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        我的第一个个人网站
+    </title>
+    <style>
+        html,body{
+        margin: 0;
+        padding: 0%;
+        height: 100%;
+        font-family:"Microft YaHei",sans-serif;
+        }
+    .hero{
+        position: relative;
+        height: 100vh;
+        background-image: url(bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero::before{
+        content: " ";
+        position: absolute;
+        top: 0;left: 0;
+        width: 0%;height: 100%;
+        background: #23e609eb;  
+        z-index: 1;  
+    }
+    .hero-content{
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+        padding: 20px;
+    }
+    .hero h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        position: relative;
+        top: -10px;bottom: 100px;
+        color: rgb(202, 202, 219);
+    h1{
+         text-shadow: none;
+        transition: text-shadow 2s ease
+    }
+    }
+    h1:hover{
+        text-shadow: 2px 2px 0px rgba(246, 243, 243, 0.915);
+        color: rgba(255, 255, 255, 0.159);
+        text-decoration: underline;
+    }
+    .hero p{
+        font-size: 2rem;
+        color: #f5f6f5eb;
+       
+
+    }
+    .ps{
+     position: absolute;
+     bottom: 30px;
+     right: 0px;
+     margin: 0px;
+     text-align: right;
+     width: 300px;
+     font-size: 14px;
+     z-index: 10;
+    }
+    a{color: white;
+        text-decoration: none;
+        font: size 20px;;
+    }
+    a:hover{text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+        color: aliceblue;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>欢迎来到我的网站</h1>
+             <div class="ks"><a href="">开始吧</a></div>
+        </div>
+         <div class="ps">我以后会在这个网站上面更新我的一些日常以及练习个人的编程技术，在构建这个网站的过程中我将使用原古手敲加上vibe coding的办法完成该网站的创建以及完善</div>
+    </div>
+</body>
+</html>
